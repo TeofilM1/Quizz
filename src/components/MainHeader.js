@@ -5,7 +5,7 @@ import classes from "./MainHeader.module.css";
 function MainHeader(props) {
   return (
     <div className={classes.nav}>
-      <Link to="/">PROGRAMING QUIZ APP</Link>
+      <Link to="quizz/">PROGRAMING QUIZ APP</Link>
       <hr/>
     </div>
   );
