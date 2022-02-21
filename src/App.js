@@ -13,7 +13,7 @@ function App() {
   const [score, setScore] = useState(0);
   const [category, setCategory] = useState("");
   const [difficulty, setDifficulty] = useState("");
-  const [error, setError] = useState(false);
+  const [error, setError] = useState();
 
   function fetchQuestionsHandler(cat, dif) {
     setCategory(cat);
@@ -30,8 +30,8 @@ function App() {
             path="/"
             element={
               <Home
-              error={error}
-              setError={setError}
+                error={error}
+                setError={setError}
                 name={name}
                 setUserName={setName}
                 fetchQuestionsHandler={fetchQuestionsHandler}
@@ -57,7 +57,14 @@ function App() {
           <Route
             exact
             path="/profile"
-            element={<ProfilePage name={name} setName={setName} score={score} setScore={setScore} />}
+            element={
+              <ProfilePage
+                name={name}
+                setName={setName}
+                score={score}
+                setScore={setScore}
+              />
+            }
           />
           <Route exact path="/*" element={<NotFound />} />
         </Routes>
