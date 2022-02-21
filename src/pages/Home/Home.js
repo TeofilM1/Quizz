@@ -23,7 +23,7 @@ function Home(props) {
     } else {
       props.setError(false);
       props.fetchQuestionsHandler(category, difficulty);
-      navigate("/quiz");
+      navigate("quizz/quiz");
     }
   }
 

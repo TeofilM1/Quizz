@@ -30,7 +30,7 @@ function Modal(props) {
             onClick={() => {
               props.setQuit(true);
               props.setName("");
-              props.navigate("/");
+              props.navigate("quizz/");
             }}
           >
             YES
