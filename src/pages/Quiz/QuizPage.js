@@ -64,7 +64,7 @@ function QuizPage(props) {
       }
     } else {
       props.setScore(props.score + 1);
-      navigate("quizz/profile");
+      navigate("/profile");
     }
   }
 
@@ -72,7 +72,7 @@ function QuizPage(props) {
     if (currQuestion < 6) {
       setQuit(true);
     } else {
-      navigate("quizz/profile");
+      navigate("/profile");
     }
   }
 
