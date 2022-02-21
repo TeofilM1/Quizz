@@ -27,7 +27,7 @@ function App() {
         <Routes>
           <Route
             exact
-            path="/"
+            path="quizz/"
             element={
               <Home
                 error={error}
@@ -40,7 +40,7 @@ function App() {
           />
           <Route
             exact
-            path="/quiz"
+            path="quizz/quiz"
             element={
               <QuizPage
                 category={category}
@@ -56,7 +56,7 @@ function App() {
           />
           <Route
             exact
-            path="/profile"
+            path="quizz/profile"
             element={
               <ProfilePage
                 name={name}
@@ -66,7 +66,7 @@ function App() {
               />
             }
           />
-          <Route exact path="/*" element={<NotFound />} />
+          <Route exact path="quizz/*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
