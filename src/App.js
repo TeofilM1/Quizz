@@ -40,7 +40,7 @@ function App() {
           />
           <Route
             exact
-            path="quizz/quiz"
+            path="/quiz"
             element={
               <QuizPage
                 category={category}
@@ -56,7 +56,7 @@ function App() {
           />
           <Route
             exact
-            path="quizz/profile"
+            path="/profile"
             element={
               <ProfilePage
                 name={name}
@@ -66,7 +66,7 @@ function App() {
               />
             }
           />
-          <Route exact path="quizz/*" element={<NotFound />} />
+          <Route exact path="/*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
