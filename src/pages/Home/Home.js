@@ -19,11 +19,11 @@ function Home(props) {
     }else if (props.name || category==="" || difficulty ==="") {
       props.setError(false);
       props.fetchQuestionsHandler(category, difficulty);
-      navigate("quizz/quiz");
+      navigate("/quiz");
     } else {
       props.setError(false);
       props.fetchQuestionsHandler(category, difficulty);
-      navigate("quizz/quiz");
+      navigate("/quiz");
     }
   }
 
