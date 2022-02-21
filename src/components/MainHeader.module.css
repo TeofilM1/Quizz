@@ -1,0 +1,16 @@
+.nav {
+    text-align: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 5vh;
+    font-weight: 700;
+}
+
+.nav hr {
+    width: 80%;
+    height: 0.4vh;
+    background-color: white;
+}

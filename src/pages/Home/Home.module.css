@@ -1,0 +1,79 @@
+.home {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.seatings h1 {
+    font-size: 5vh;
+}
+
+.form {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+.formControls {
+    display: flex;
+    flex-direction: column;
+}
+
+.formControls label {
+    font-size: 20px;
+    
+}
+
+.formControls input,select {
+    height: 6vh;
+    font-size: 23px;
+    border-radius: 10px;
+    color: darkviolet;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+}
+
+.actions {
+    margin-top: 2rem;
+}
+
+.actions button{
+    width: 50%;
+    height: 3rem;
+    border-radius: 10px;
+    font-size: 35px;
+    background-color: darkviolet;
+    color: white;
+}
+
+.actions button:hover {
+    background-color: lightblue;
+    color: darkviolet;
+}
+
+.error {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: red;
+    width: 50%;
+    font-size: 25px;
+    margin-left: 25%;
+}
+
+@media (max-width: 768px) {
+    .home {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .error {
+        width: 86%;
+        font-size: 20px;
+        margin-left: 8%;
+    }
+
+    .formControls input,select {
+        width: 80%;
+    }
+}

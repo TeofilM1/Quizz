@@ -1,0 +1,22 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.footer hr {
+    width: 80%;
+    height: 0.4vh;
+    background-color: white;
+}
+
+.footer h3 {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        font-size: 14px;
+    }
+
+}
